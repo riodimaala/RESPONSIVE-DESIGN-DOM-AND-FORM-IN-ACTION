@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(6, 175, 232);
+    padding: 40px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.content {
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 30px;
+    align-items: start;
+}
+
+.form-section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+form button {
+    width: 100px;
+    padding: 11px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #222;
+    color: white;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background: #444;
+}
+
+.student-list {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.student-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    padding: 18px;
+
+    min-height: 150px;
+    background: white;
+}
+
+.student-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.remove-btn {
+    width: 100%;
+    padding: 9px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #d9534f;
+    color: white;
+
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #c9302c;
+}
+
+@media (max-width: 1000px) {
+
+    .content {
+        grid-template-columns: 250px 1fr;
+        gap: 20px;
+    }
+
+    .student-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    form button {
+        width: 100px;
+    }
+
+    /* MOBILE: 1 CARD */
+    .student-list {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .student-section {
+        width: 100%;
+    }
+}

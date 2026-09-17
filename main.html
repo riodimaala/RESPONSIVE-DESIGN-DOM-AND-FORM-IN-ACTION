@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Student Directory</h1>
+            <p>Your short description</p>
+        </header>
+
+        <div class="content">
+
+            <!-- FORM -->
+            <section class="form-section">
+
+                <form id="studentForm">
+
+                    <label for="studentName">Student Name</label>
+                    <input 
+                        type="text" 
+                        id="studentName" 
+                        required
+                    >
+
+                    <label for="program">Program</label>
+                    <input 
+                        type="text" 
+                        id="program" 
+                        required
+                    >
+
+                    <button type="submit">Add</button>
+
+                </form>
+
+            </section>
+
+            <!-- STUDENT CARDS -->
+            <section class="student-section">
+
+                <div id="studentList" class="student-list">
+                    <!-- Cards will be created here -->
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
